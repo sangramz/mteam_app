@@ -1,0 +1,576 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Manny's Team</title>
+        <meta name="description" content="#">
+        <meta name="keywords" content="#">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+     
+        <!-- animation --> 
+        <link rel="stylesheet" href="{% static "mt/css/animate.css" %}"/>
+        <!-- bootstrap --> 
+        <link rel="stylesheet" href="{% static "mt/css/bootstrap.css" %}" />
+        <!-- et line icon --> 
+        <link rel="stylesheet" href="{% static "mt/css/et-line-icons.css"  %}"/>
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="{% static "mt/css/font-awesome.min.css" %}" />
+        <!-- revolution slider -->
+        <link rel="stylesheet" href="{% static "mt/css/extralayers.css" %}" />
+        <link rel="stylesheet" href="{% static "mt/css/settings.css" %}" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="{% static "mt/css/magnific-popup.css" %}" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="{% static "mt/css/owl.carousel.css" %}" />
+        <link rel="stylesheet" href="{% static "mt/css/owl.transitions.css" %}" />
+        <link rel="stylesheet" href="{% static "mt/css/full-slider.css" %}" />
+        <!-- text animation -->
+        <link rel="stylesheet" href="{% static "mt/css/text-effect.css" %}" />
+        <!-- hamburger menu  -->
+        <link rel="stylesheet" href="{% static "mt/css/menu-hamburger.css" %}" />
+        <!-- common -->
+        <link rel="stylesheet" href="{% static "mt/css/style.css" %}" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="{% static "mt/css/responsive.css" %}" />
+        <!--[if IE]>
+            <link rel="stylesheet" href="{% static "mt/css/style-ie.css" %}" />
+        <![endif]-->
+        <!--[if IE]>
+            <script src="{% static "mt/js/html5shiv.js" %}"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- navigation panel -->
+        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white nav-border-bottom" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-md-2 pull-left">
+                        <a class="logo-light" href="index.html"><img alt="" src="{% static "mt/images/logo_white.png" %}" class="logo" /></a>
+                        <a class="logo-dark" href="index.html"><img alt="" src="{% static "mt/images/logo.png" %}" class="logo" /></a>
+                    </div>
+                    <!-- end logo -->
+                    <!-- search and cart  -->
+                    <div class="col-md-2 no-padding-left search-cart-header pull-right">
+                        <div id="top-search">
+                            <!-- nav search -->
+                            <a href="#search-header" class="header-search-form"><i class="fa fa-search search-button"></i></a>
+                            <!-- end nav search -->
+                        </div>
+                        <!-- search input-->
+                        <form id="search-header" method="post" action="#" name="search-header" class="mfp-hide search-form-result">
+                            <div class="search-form position-relative">
+                                <button type="submit" class="fa fa-search close-search search-button"></button>
+                                <input type="text" name="search" class="search-input" placeholder="Enter your keywords..." autocomplete="off">
+                            </div>
+                        </form>
+                        <!-- end search input -->
+                        <div class="top-cart">
+                            <!-- nav shopping bag -->
+                            <a class="text-small highlight-link text-uppercase bg-yellow white-text" href="#">Hire Us<i class="fa fa-long-arrow-right extra-small-icon white-text"></i></a>                         
+                        </div>
+                    </div>
+                    <!-- end search and cart  -->
+                    <!-- toggle navigation -->
+                    <div class="navbar-header col-sm-8 col-xs-2 pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <!-- toggle navigation end -->
+                    <!-- main menu -->
+                    <div class="col-md-8 no-padding-right accordion-menu text-right">
+                        <div class="navbar-collapse collapse">
+                            <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
+                                <!-- menu item -->
+                                <li class="dropdown panel">
+                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <!-- end menu item -->
+                              <!-- menu item -->
+                                <li class="dropdown panel">
+                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Join Manny's Team <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <!-- end menu item -->
+                                <li class="dropdown panel">
+                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Our Team <i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <!-- end menu item -->
+                              <!-- menu item -->
+                                <li class="dropdown panel">
+                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Case Studies<i class="fa fa-angle-down"></i></a>
+                                </li>
+                                <!-- end menu item -->
+                             
+                         
+                         
+                        
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end main menu -->
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation panel -->
+        <!-- background video section -->
+        <section class="no-padding full-screen cover-background" style="background-image:url('{% static "mt/images/video-bg1.jpg" %}');">
+            <div class="video-background  fit-videos">
+                <div class="container full-screen position-relative">
+                    <div class="slider-typography">
+                        <div class="slider-text-middle-main">
+                            <div class="slider-text-bottom slider-text-middle3">
+                                <h1 class="cd-headline letters type xs-margin-bottom-thirtyfive">
+                                    <span class="rotation-highlight">LEARN + EARN + COLLABORATE</span><br>
+                                    <span class="cd-words-wrapper waiting">
+                                        <b class="is-visible">Get Trained in Latest Tech</b>
+                                        <b>Find Lucrative Opportunities</b>
+                                        <b>Contribute to the Experts Community</b>
+                                    </span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down"><a href="#sec1" class="inner-link"><i class="fa fa-angle-down"></i></a></div>
+            </div>
+            <div class="video-wrapper full-screen-width z-index-0">
+                <!-- video -->
+                <video autoplay muted loop class="html-video" preload="auto" poster="{% static "mt/images/video-bg1.jpg" %}">
+                    <source type="video/mp4" src="{% static "mt/video/video.mp4" %}">                  
+                </video>
+                <!-- end video -->
+            </div>
+        </section>
+        <!-- end background video section -->
+        <!-- about section -->
+        <section id="sec1" class="no-padding-bottom wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-10 text-center center-col">
+                        <span class="margin-five no-margin-top display-block letter-spacing-2">EST. 2019</span>
+                        <h1>One Stop Point to learn, work & socialise globally.</h1>
+                        <p class="text-med width-90 center-col margin-seven no-margin-bottom"> 
+                            Manny's Team is the next generation platform that offers a range of Technology based online course,
+                            enabling eligibilities to apply for opportunities to work with clients from all over the world right here,
+                            without looking anywhere else and a supportive community of developers & experiences.                       
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid margin-five no-margin-bottom">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 bg-fast-yellow padding-three text-center">
+                        <span class="text-small text-uppercase font-weight-600 black-text letter-spacing-2">
+                        E-Learning &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        Freelancing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        Community </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about section -->
+
+
+        <!-- services section -->
+        <section class="corporate-standards no-padding-bottom wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 text-center">
+                        <h3 class="section-title no-padding-bottom">The Best You Can Get</h3>
+                    </div>
+                    <!-- end section title -->
+                </div>
+            </div>
+            <div class="container-fluid margin-five no-margin-bottom no-padding">
+                <div class="row no-margin">
+                    <!-- tab -->
+                    <div class="col-md-12 col-sm-12 center-col text-center no-padding" id="animated-tab">
+                        <!-- tab content section -->
+                        <div class="tab-content">
+                            <!-- tab content -->
+                            <div id="tab6_sec1" class="text-center center-col tab-pane fade in active"> 
+                                <div class="tab-pane fade in"> 
+                                    <div class="col-lg-6 col-md-6 no-padding corporate-standards-img cover-background position-relative" style="background-image:url('{% static "mt/images/elearning.jpg" %}');">
+                                        <div class="opacity-medium bg-dark-gray"></div>
+                                        <p class="title-small text-uppercase corporate-standards-title white-text letter-spacing-7"><span class="title-extra-large no-letter-spacing yellow-text">01</span><br>E-Learning</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 corporate-standards-text sm-margin-lr-four sm-margin-top-four xs-padding-tb-ten">
+                                        <div class="img-border-small-fix border-gray"></div>
+                                        <i class="icon-book-open large-icon yellow-text"></i>
+                                        <h1 class="margin-ten no-margin-bottom">Intelligence is nothing without ambition.</h1>
+                                        <p class="text-med margin-ten width-80 center-col xs-width-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a class="text-small highlight-link text-uppercase bg-black white-text" href="#">Read More <i class="fa fa-long-arrow-right extra-small-icon white-text"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                        <!-- end tab content section -->
+                    </div>
+                    <!-- end tab -->
+                </div>
+            </div>
+
+            <div class="container-fluid margin-five no-margin-bottom no-padding">
+                <div class="row no-margin">
+                    <!-- tab -->
+                    <div class="col-md-12 col-sm-12 center-col text-center no-padding" id="animated-tab">
+                        <!-- tab content section -->
+                        <div class="tab-content">
+                            <!-- tab content -->
+                            <div id="tab6_sec1" class="text-center center-col tab-pane fade in active"> 
+                                <div class="tab-pane fade in"> 
+                                <div class="col-lg-6 col-md-6 corporate-standards-text sm-margin-lr-four sm-margin-top-four xs-padding-tb-ten">
+                                        <div class="img-border-small-fix border-gray"></div>
+                                        <i class="icon-briefcase large-icon yellow-text"></i>
+                                        <h1 class="margin-ten no-margin-bottom">Top clients around the Globe to work with.</h1>
+                                        <p class="text-med margin-ten width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a class="text-small highlight-link text-uppercase bg-black white-text" href="services.html">Read More <i class="fa fa-long-arrow-right extra-small-icon white-text"></i></a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 no-padding corporate-standards-img cover-background position-relative" style="background-image:url('{% static "mt/images/freelancing.jpg" %}');">
+                                        <div class="opacity-medium bg-dark-gray"></div>
+                                        <p class="title-small text-uppercase corporate-standards-title white-text letter-spacing-7"><span class="title-extra-large no-letter-spacing yellow-text">02</span><br>Freelancing</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                        <!-- end tab content section -->
+                    </div>
+                    <!-- end tab -->
+                </div>
+            </div>
+
+            <div class="container-fluid margin-five no-margin-bottom no-padding">
+                <div class="row no-margin">
+                    <!-- tab -->
+                    <div class="col-md-12 col-sm-12 center-col text-center no-padding" id="animated-tab">
+                        <!-- tab content section -->
+                        <div class="tab-content">
+                            <!-- tab content -->
+                            <div id="tab6_sec1" class="text-center center-col tab-pane fade in active"> 
+                                <div class="tab-pane fade in"> 
+                                     <div class="col-lg-6 col-md-6 no-padding corporate-standards-img cover-background position-relative" style="background-image:url('{% static "mt/images/community.jpg" %}');">
+                                        <div class="opacity-medium bg-dark-gray"></div>
+                                        <p class="title-small text-uppercase corporate-standards-title white-text letter-spacing-7"><span class="title-extra-large no-letter-spacing yellow-text">03</span><br>Community</p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 corporate-standards-text sm-margin-lr-four sm-margin-top-four xs-padding-tb-ten">
+                                        <div class="img-border-small-fix border-gray"></div>
+                                        <i class="icon-chat large-icon yellow-text"></i>
+                                        <h1 class="margin-ten no-margin-bottom">1000's of Developers helping each other everyday</h1>
+                                        <p class="text-med margin-ten width-80 center-col">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                        <a class="text-small highlight-link text-uppercase bg-black white-text" href="services.html">Read More <i class="fa fa-long-arrow-right extra-small-icon white-text"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab content -->
+                        </div>
+                        <!-- end tab content section -->
+                    </div>
+                    <!-- end tab -->
+                </div>
+            </div>
+
+        </section>
+        <!-- end services section -->
+
+
+
+        <!-- features section -->
+        <section id="features" class="features wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <!-- section title -->
+                    <div class="col-md-12 text-center">
+                        <h3 class="section-title">Addressing the most important aspect of a Developer's Life</h3>
+                    </div>
+                    <!-- end section title -->
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <!-- features item -->
+                        <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-desktop medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 1</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                        <!-- features item -->
+                        <div class="features-section no-margin col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-target medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 2</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <!-- features item -->
+                        <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-trophy medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 3</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                        <!-- features item -->
+                        <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-scissors medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 4</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <!-- features item -->
+                        <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-hotairballoon medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 4</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                        <!-- features item -->
+                        <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
+                            <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-tools medium-icon"></i></div>
+                            <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
+                                <h5>Point 5</h5>
+                                <div class="separator-line bg-yellow"></div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                            </div>
+                        </div>
+                        <!-- end features item -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end features section -->
+        <!-- counter section -->
+        <section id="counter" class="fix-background" style="background-image:url('images/slider-img45.jpg');">
+            <div class="opacity-full bg-dark-gray"></div>
+            <div class="container position-relative">
+                <div class="row">
+                    <!-- counter item -->
+                    <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten" data-wow-duration="300ms">
+                        <i class="icon-heart medium-icon"></i>
+                        <span class="timer counter-number white-text main-font font-weight-600" data-to="516" data-speed="7000"></span>
+                        <span class="counter-title light-gray-text">Stat 1</span>
+                    </div>
+                    <!-- end counter item -->
+                    <!-- counter item -->
+                    <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten" data-wow-duration="600ms">
+                        <i class="icon-happy medium-icon"></i>
+                        <span class="timer counter-number white-text main-font font-weight-600" data-to="478" data-speed="7000"></span>
+                        <span class="counter-title light-gray-text">Stat 2</span>
+                    </div>
+                    <!-- end counter item -->
+                    <!-- counter item -->
+                    <div class="col-md-3 col-sm-6 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten" data-wow-duration="900ms">
+                        <i class="icon-anchor medium-icon"></i>
+                        <span class="timer counter-number white-text main-font font-weight-600" data-to="652" data-speed="7000"></span>
+                        <span class="counter-title light-gray-text">Stat 3</span>
+                    </div>
+                    <!-- end counter item -->
+                    <!-- counter item -->
+                    <div class="col-md-3 col-sm-6 text-center counter-section wow fadeInUp" data-wow-duration="1200ms">
+                        <i class="icon-chat medium-icon"></i>
+                        <span class="timer counter-number white-text main-font font-weight-600" data-to="458" data-speed="7000"></span>
+                        <span class="counter-title light-gray-text">Stat 4</span>
+                    </div>
+                    <!-- end counter item -->
+                </div>
+            </div>
+        </section>
+        <!-- end counter section -->
+       
+       
+        <!-- highlight section -->
+        <section class="bg-fast-yellow no-padding wow fadeInUp">
+            <div class="container">
+                <div class="row padding-five sm-text-center">
+                    <div class="col-md-1">
+                        <i class="medium-icon black-text no-margin icon-toolbox"></i>
+                    </div>
+                    <div class="col-md-6 no-padding">
+                        <span class="text-med text-uppercase letter-spacing-2 margin-two black-text font-weight-600 xs-margin-top-six xs-margin-bottom-six display-block">Want to see more amazing works?</span>
+                    </div>
+                    <div class="col-md-5 no-padding">
+                        <a class="highlight-button-dark btn btn-medium button xs-margin-bottom-five xs-no-margin-right" href="portfolio-wide-with-title-gutter-4columns.html">View Portfolio</a>
+                        <a class="highlight-button btn btn-medium button xs-margin-bottom-five xs-no-margin-right" href="#">Subscribe Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end highlight section -->
+
+        <!-- footer -->
+        <footer>
+            <div class=" bg-white footer-top">
+                <div class="container">
+                    <div class="row margin-four">
+                        <!-- phone -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">123-456-7890</h6></div>
+                        <!-- end phone -->
+                        <!-- address -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">Internet</h6></div>
+                        <!-- end address -->
+                        <!-- email -->
+                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:no-reply@domain.com" class="black-text">xyz@mannyteam.com</a></h6></div>
+                        <!-- end email -->
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-middle">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 footer-link1 xs-display-none">
+                        <!-- headline -->
+                        <h5>About Us</h5>
+                        <!-- end headline -->
+                        <!-- text -->
+                        <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <!-- end text -->
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3">
+                        <!-- headline -->
+                        <h5>Top Courses</h5>
+                        <!-- end headline -->
+                        <!-- link -->
+                        <ul>
+                            <li><a href="#">Course 1</a></li>
+                            <li><a href="#">Course 2</a></li>
+                            <li><a href="#">Course 3</a></li>
+                            <li><a href="#">Course 4</a></li>
+                        </ul>
+                        <!-- end link -->
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link3">
+                        <!-- headline -->
+                        <h5>Freelancing</h5>
+                        <!-- end headline -->
+                        <!-- link -->
+                        <ul>
+                            <li><a href="#">Job 1 </a></li>
+                            <li><a href="#">Job 2</a></li>
+                            <li><a href="#">Job 3</a></li>
+                            <li><a href="#">Job 4</a></li>
+                        </ul>
+                        <!-- end link -->
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link4">
+                        <!-- headline -->
+                        <h5>Top Blogs</h5>
+                        <!-- end headline -->
+                        <!-- link -->
+                        <ul>
+                            <li><a href="#">Blog 1</a></li>
+                            <li><a href="#">Blog 2</a></li>
+                            <li><a href="#">Blog 3</a></li>
+                            <li><a href="#">Blog 4</a></li>
+                        </ul>
+                        <!-- end link -->
+                    </div>
+                </div>
+                <div class="wide-separator-line bg-mid-gray no-margin-lr margin-three no-margin-bottom"></div>
+                <div class="row margin-four no-margin-bottom">
+                    <div class="col-md-6 col-sm-12 sm-text-center sm-margin-bottom-four">
+                        <!-- link -->
+                        <ul class="list-inline footer-link text-uppercase">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <!-- end link -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 footer-social text-right sm-text-center">
+                        <!-- social media link -->
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
+                        <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                        <!-- end social media link -->
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark-gray footer-bottom">
+                <div class="container">
+                    <div class="row margin-three">
+                        <!-- copyright -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            &copy; 2015 Team's Manny
+                        </div>
+                        <!-- end copyright -->
+                        <!-- logo -->
+                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
+                            <a href="index.html"><img src="{% static "images/logo_light.png" %}" alt="" /></a>
+                        </div>
+                        <!-- end logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- scroll to top -->
+            <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+            <!-- scroll to top End... -->
+        </footer>
+        <!-- end footer -->
+        <!-- javascript libraries / javascript files set #1 --> 
+        <script type="text/javascript" src="{% static "mt/js/jquery.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/modernizr.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/bootstrap.js" %}"></script> 
+        <script type="text/javascript" src="{% static "mt/js/bootstrap-hover-dropdown.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/jquery.easing.1.3.js" %}"></script> 
+        <script type="text/javascript" src="{% static "mt/js/skrollr.min.js" %}"></script>  
+        <script type="text/javascript" src="{% static "mt/js/smooth-scroll.js" %}"></script>
+         <!-- jquery appear -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.appear.js" %}"></script>
+        <!-- animation -->
+        <script type="text/javascript" src="{% static "mt/js/wow.min.js" %}"></script>
+        <!-- page scroll -->
+        <script type="text/javascript" src="{% static "mt/js/page-scroll.js" %}"></script>
+        <!-- easy piechart-->
+        <script type="text/javascript" src="{% static "mt/js/jquery.easypiechart.js" %}"></script>
+        <!-- parallax -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.parallax-1.1.3.js" %}"></script>
+        <!--portfolio with shorting tab --> 
+        <script type="text/javascript" src="{% static "mt/js/jquery.isotope.min.js" %}"></script> 
+        <!-- owl slider  -->
+        <script type="text/javascript" src="{% static "mt/js/owl.carousel.min.js" %}"></script>
+        <!-- magnific popup  -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.magnific-popup.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/popup-gallery.js" %}"></script>
+        <!-- text effect  -->
+        <script type="text/javascript" src="{% static "mt/js/text-effect.js" %}"></script>
+        <!-- revolution slider  -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.tools.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/jquery.revolution.js" %}"></script>
+        <!-- counter  -->
+        <script type="text/javascript" src="{% static "mt/js/counter.js" %}"></script>
+         <!-- countTo -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.countTo.js" %}"></script>
+        <!-- fit videos  -->
+        <script type="text/javascript" src="{% static "mt/js/jquery.fitvids.js" %}"></script>
+        <!-- imagesloaded  -->
+        <script type="text/javascript" src="{% static "mt/js/imagesloaded.pkgd.min.js" %}"></script>
+        <!-- hamburger menu-->
+        <script type="text/javascript" src="{% static "mt/js/classie.js" %}"></script>
+        <script type="text/javascript" src="{% static "mt/js/hamburger-menu.js"  %}"></script>
+        <!-- setting --> 
+        <script type="text/javascript" src="{% static "mt/js/main.js" %}"></script>
+    </body>
+</html>
